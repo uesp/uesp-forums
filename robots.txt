@@ -1,0 +1,33 @@
+User-agent: *
+Disallow /adm/
+Disallow /cache/
+Disallow /config.php
+Disallow /cron.php
+Disallow /download/
+Disallow /faq.php
+Disallow /files/
+Disallow /images/
+Disallow /includes/
+Disallow /language/
+Disallow /mcp.php
+Disallow /memberlist.php
+Disallow /posting.php
+Disallow /search.php
+Disallow /store/
+Disallow /styles/
+Disallow /ucp.php
+Disallow /viewonline.php
+
+# should limit bots to viewing links of form /viewtopic.php?f=X&t=X
+Disallow: /viewtopic.php?p=
+Disallow: /viewtopic.php?=&p=
+Disallow: /viewtopic.php?t=
+Disallow: /viewtopic.php?start=
+Disallow: /*&view=previous
+Disallow: /*&view=next
+Disallow: /*&sid=
+Disallow: /*&p=
+Disallow: /*&sd=a
+Disallow: /*&start=0
+
+Crawl-delay: 10

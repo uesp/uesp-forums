@@ -1,0 +1,18 @@
+name = uesp.forums
+repository = https://code.google.com/p/uesp.forums
+staged = true
+
+ignore = .hg*
+ignore = *.deploy
+
+dest = content1.uesp.net:/home/uesp/www/forums/
+dest = content2.uesp.net:/home/uesp/www/forums/
+dest = content3.uesp.net:/home/uesp/www/forums/
+
+chown_source = :uespadmin -R .
+chmod_source = g+rw,a+r -R .
+chown_source = apache files
+chown_source = apache cache
+chown_source = apache store
+chown_source = apache images/avatars/upload
+
